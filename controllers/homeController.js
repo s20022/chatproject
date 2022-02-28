@@ -1,8 +1,10 @@
 "use strict";
-exports.showHome = (req, res) => {
-    res.render("home");
-};
 
-exports.showChat = (req, res) => {
-    res.render("chat");
+module.exports = {
+    index: (req,res) => {
+        res.render("index");
+    },
+    chat: (req, res) => {
+        res.render("chat");
+    }
 };
